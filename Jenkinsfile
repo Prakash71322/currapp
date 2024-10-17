@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'I run maven package target'
+                bat 'mvn package -DskipTest'
             }
         }
         stage('Deploy') {
