@@ -7,7 +7,7 @@ pipeline {
                 echo 'I run maven package target'
             }
         }
-        stage('Build') {
+        stage('Deploy') {
             steps {
                 echo 'Deploying to tomcat'
             }
