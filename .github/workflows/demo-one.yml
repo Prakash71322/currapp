@@ -11,8 +11,11 @@ jobs:
     steps:
       - name: clone code
         uses: actions/checkout@v4
-      - name: update-ubuntu
-        run: |
-          apt update
-          apt upgrade -y 
-          apt install maven -y 
+      - name: setup-env
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: build-app
+        run: mvn package -DskipTests
