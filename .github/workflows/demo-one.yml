@@ -19,3 +19,9 @@ jobs:
           cache: maven
       - name: build-app
         run: mvn package -DskipTests
+  
+  demo-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy-app
+        run: echo "Deploying app..."
