@@ -13,4 +13,4 @@ jobs:
         run: echo "mvn package -DskipTests"
   
   demo-deploy:
-    uses: ./github/workflows/callable.yml
+    uses: ./.github/workflows/callable.yml
