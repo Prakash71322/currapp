@@ -1,0 +1,9 @@
+name: callable-workflow
+on: workflow_call
+
+jobs:
+  sample-call:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reusable-wf-job-step
+        run: echo "To show the reusable demo"
