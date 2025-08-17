@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 Hi there !!!
 
 This is for testing
 
 
 ....
+=======
+Hi there !!!
+>>>>>>> Rakesh
