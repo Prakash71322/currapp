@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ConverterModel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ra-currency-converter</a> &gt; <a href="index.source.html" class="el_package">com.rautomates.cc.model</a> &gt; <span class="el_source">ConverterModel.java</span></div><h1>ConverterModel.java</h1><pre class="source lang-java linenums">package com.rautomates.cc.model;
+
+import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.List;
+
+import com.rautomates.cc.util.Currency;
+
+<span class="nc" id="L9">public class ConverterModel {</span>
+	
+	private Currency srcCurrency;
+	
+	private Currency tgtCurrency;
+	
+	private BigDecimal srcAmount;
+	
+	private BigDecimal tgtAmount;
+
+	
+	/**
+	 * @return the srcCurrency
+	 */
+	public Currency getSrcCurrency() {
+<span class="nc" id="L24">		return srcCurrency;</span>
+	}
+
+	/**
+	 * @param srcCurrency the srcCurrency to set
+	 */
+	public void setSrcCurrency(Currency srcCurrency) {
+<span class="nc" id="L31">		this.srcCurrency = srcCurrency;</span>
+<span class="nc" id="L32">	}</span>
+
+	/**
+	 * @return the tgtCurrency
+	 */
+	public Currency getTgtCurrency() {
+<span class="nc" id="L38">		return tgtCurrency;</span>
+	}
+
+	/**
+	 * @param tgtCurrency the tgtCurrency to set
+	 */
+	public void setTgtCurrency(Currency tgtCurrency) {
+<span class="nc" id="L45">		this.tgtCurrency = tgtCurrency;</span>
+<span class="nc" id="L46">	}</span>
+
+	/**
+	 * @return the srcAmount
+	 */
+	public BigDecimal getSrcAmount() {
+<span class="nc" id="L52">		return srcAmount;</span>
+	}
+
+	/**
+	 * @param srcAmount the srcAmount to set
+	 */
+	public void setSrcAmount(BigDecimal srcAmount) {
+<span class="nc" id="L59">		this.srcAmount = srcAmount;</span>
+<span class="nc" id="L60">	}</span>
+
+	/**
+	 * @return the tgtAmount
+	 */
+	public BigDecimal getTgtAmount() {
+<span class="nc" id="L66">		return tgtAmount;</span>
+	}
+
+	/**
+	 * @param tgtAmount the tgtAmount to set
+	 */
+	public void setTgtAmount(BigDecimal tgtAmount) {
+<span class="nc" id="L73">		this.tgtAmount = tgtAmount;</span>
+<span class="nc" id="L74">	}</span>
+
+	public List&lt;Currency&gt; getSupportedCurrencies() {
+<span class="nc" id="L77">		return Arrays.asList(Currency.values());</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

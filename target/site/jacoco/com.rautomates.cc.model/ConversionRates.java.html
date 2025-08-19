@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ConversionRates.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ra-currency-converter</a> &gt; <a href="index.source.html" class="el_package">com.rautomates.cc.model</a> &gt; <span class="el_source">ConversionRates.java</span></div><h1>ConversionRates.java</h1><pre class="source lang-java linenums">package com.rautomates.cc.model;
+
+import java.util.Map;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+<span class="nc" id="L8">public class ConversionRates {</span>
+
+	private Boolean success;
+    private String terms;
+    private String privacy;
+    private Boolean historical;
+    private String date;
+    private String source;
+    private Long timestamp;
+    
+    private Error error;
+    private Map&lt;String, String&gt; quotes;
+    
+	/**
+	 * @return the success
+	 */
+	public Boolean getSuccess() {
+<span class="nc" id="L25">		return success;</span>
+	}
+	/**
+	 * @param success the success to set
+	 */
+	public void setSuccess(Boolean success) {
+<span class="nc" id="L31">		this.success = success;</span>
+<span class="nc" id="L32">	}</span>
+	/**
+	 * @return the terms
+	 */
+	public String getTerms() {
+<span class="nc" id="L37">		return terms;</span>
+	}
+	/**
+	 * @param terms the terms to set
+	 */
+	public void setTerms(String terms) {
+<span class="nc" id="L43">		this.terms = terms;</span>
+<span class="nc" id="L44">	}</span>
+	/**
+	 * @return the privacy
+	 */
+	public String getPrivacy() {
+<span class="nc" id="L49">		return privacy;</span>
+	}
+	/**
+	 * @param privacy the privacy to set
+	 */
+	public void setPrivacy(String privacy) {
+<span class="nc" id="L55">		this.privacy = privacy;</span>
+<span class="nc" id="L56">	}</span>
+	/**
+	 * @return the historical
+	 */
+	public Boolean getHistorical() {
+<span class="nc" id="L61">		return historical;</span>
+	}
+	/**
+	 * @param historical the historical to set
+	 */
+	public void setHistorical(Boolean historical) {
+<span class="nc" id="L67">		this.historical = historical;</span>
+<span class="nc" id="L68">	}</span>
+	/**
+	 * @return the date
+	 */
+	public String getDate() {
+<span class="nc" id="L73">		return date;</span>
+	}
+	/**
+	 * @param date the date to set
+	 */
+	public void setDate(String date) {
+<span class="nc" id="L79">		this.date = date;</span>
+<span class="nc" id="L80">	}</span>
+	/**
+	 * @return the source
+	 */
+	public String getSource() {
+<span class="nc" id="L85">		return source;</span>
+	}
+	/**
+	 * @param source the source to set
+	 */
+	public void setSource(String source) {
+<span class="nc" id="L91">		this.source = source;</span>
+<span class="nc" id="L92">	}</span>
+	/**
+	 * @return the timestamp
+	 */
+	public Long getTimestamp() {
+<span class="nc" id="L97">		return timestamp;</span>
+	}
+	/**
+	 * @param timestamp the timestamp to set
+	 */
+	public void setTimestamp(Long timestamp) {
+<span class="nc" id="L103">		this.timestamp = timestamp;</span>
+<span class="nc" id="L104">	}</span>
+	/**
+	 * @return the error
+	 */
+	public Error getError() {
+<span class="nc" id="L109">		return error;</span>
+	}
+	/**
+	 * @param error the error to set
+	 */
+	public void setError(Error error) {
+<span class="nc" id="L115">		this.error = error;</span>
+<span class="nc" id="L116">	}</span>
+	/**
+	 * @return the quotes
+	 */
+	public Map&lt;String, String&gt; getQuotes() {
+<span class="nc" id="L121">		return quotes;</span>
+	}
+	/**
+	 * @param quotes the quotes to set
+	 */
+	public void setQuotes(Map&lt;String, String&gt; quotes) {
+<span class="nc" id="L127">		this.quotes = quotes;</span>
+<span class="nc" id="L128">	}</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ra-currency-converter</a> &gt; <a href="index.source.html" class="el_package">com.rautomates.cc.controller</a> &gt; <span class="el_source">MainController.java</span></div><h1>MainController.java</h1><pre class="source lang-java linenums">package com.rautomates.cc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.rautomates.cc.bp.ConverterBP;
+import com.rautomates.cc.model.ConverterModel;
+import com.rautomates.cc.model.ResponseModel;
+
+@RestController
+<span class="fc" id="L20">public class MainController {</span>
+
+	@Autowired
+	ConverterBP converterBP;
+
+	@RequestMapping(value = &quot;/&quot;, method = RequestMethod.GET)
+	public ModelAndView home() {
+<span class="nc" id="L27">		return new ModelAndView(&quot;index&quot;);</span>
+	}
+
+	@RequestMapping(value = &quot;/converter&quot;, method = RequestMethod.GET)
+	public ModelAndView converter(ModelAndView mnv) {
+<span class="nc" id="L32">		mnv.setViewName(&quot;converter&quot;);</span>
+<span class="nc" id="L33">		mnv.addObject(&quot;converterModel&quot;, converterBP.getConverterModel());</span>
+<span class="nc" id="L34">		return mnv;</span>
+	}
+
+	@RequestMapping(value = &quot;/convert&quot;, method = RequestMethod.POST)
+	public ResponseEntity&lt;ResponseModel&gt; doConvert(@ModelAttribute ConverterModel cModel, Model model,
+			HttpServletRequest request) {
+
+<span class="nc" id="L41">		HttpStatus status = HttpStatus.OK;</span>
+
+<span class="nc" id="L43">		model.addAttribute(&quot;converterModel&quot;, cModel);</span>
+
+<span class="nc" id="L45">		ResponseModel rm = converterBP.getConvertedValue(cModel.getSrcCurrency(), cModel.getTgtCurrency(),</span>
+<span class="nc" id="L46">				cModel.getSrcAmount());</span>
+
+<span class="nc" id="L48">		return new ResponseEntity&lt;ResponseModel&gt;(rm, status);</span>
+	}
+
+	@RequestMapping(value = &quot;/contact&quot;, method = RequestMethod.GET)
+	public ModelAndView contact() {
+<span class="nc" id="L53">		return new ModelAndView(&quot;contact&quot;);</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

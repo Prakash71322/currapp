@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Currency.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ra-currency-converter</a> &gt; <a href="index.source.html" class="el_package">com.rautomates.cc.util</a> &gt; <span class="el_source">Currency.java</span></div><h1>Currency.java</h1><pre class="source lang-java linenums">package com.rautomates.cc.util;
+
+<span class="nc" id="L3">public enum Currency {</span>
+
+<span class="nc" id="L5">	AED(&quot;AED&quot;,&quot;United Arab Emirates Dirham&quot;),</span>
+<span class="nc" id="L6">	AFN(&quot;AFN&quot;,&quot;Afghan Afghani&quot;),</span>
+<span class="nc" id="L7">	ALL(&quot;ALL&quot;,&quot;Albanian Lek&quot;),</span>
+<span class="nc" id="L8">	AMD(&quot;AMD&quot;,&quot;Armenian Dram&quot;),</span>
+<span class="nc" id="L9">	ANG(&quot;ANG&quot;,&quot;Netherlands Antillean Guilder&quot;),</span>
+<span class="nc" id="L10">	AOA(&quot;AOA&quot;,&quot;Angolan Kwanza&quot;),</span>
+<span class="nc" id="L11">	ARS(&quot;ARS&quot;,&quot;Argentine Peso&quot;),</span>
+<span class="nc" id="L12">	AUD(&quot;AUD&quot;,&quot;Australian Dollar&quot;),</span>
+<span class="nc" id="L13">	AWG(&quot;AWG&quot;,&quot;Aruban Florin&quot;),</span>
+<span class="nc" id="L14">	AZN(&quot;AZN&quot;,&quot;Azerbaijani Manat&quot;),</span>
+<span class="nc" id="L15">	BAM(&quot;BAM&quot;,&quot;Bosnia-Herzegovina Convertible Mark&quot;),</span>
+<span class="nc" id="L16">	BBD(&quot;BBD&quot;,&quot;Barbadian Dollar&quot;),</span>
+<span class="nc" id="L17">	BDT(&quot;BDT&quot;,&quot;Bangladeshi Taka&quot;),</span>
+<span class="nc" id="L18">	BGN(&quot;BGN&quot;,&quot;Bulgarian Lev&quot;),</span>
+<span class="nc" id="L19">	BHD(&quot;BHD&quot;,&quot;Bahraini Dinar&quot;),</span>
+<span class="nc" id="L20">	BIF(&quot;BIF&quot;,&quot;Burundian Franc&quot;),</span>
+<span class="nc" id="L21">	BMD(&quot;BMD&quot;,&quot;Bermudan Dollar&quot;),</span>
+<span class="nc" id="L22">	BND(&quot;BND&quot;,&quot;Brunei Dollar&quot;),</span>
+<span class="nc" id="L23">	BOB(&quot;BOB&quot;,&quot;Bolivian Boliviano&quot;),</span>
+<span class="nc" id="L24">	BRL(&quot;BRL&quot;,&quot;Brazilian Real&quot;),</span>
+<span class="nc" id="L25">	BSD(&quot;BSD&quot;,&quot;Bahamian Dollar&quot;),</span>
+<span class="nc" id="L26">	BTC(&quot;BTC&quot;,&quot;Bitcoin&quot;),</span>
+<span class="nc" id="L27">	BTN(&quot;BTN&quot;,&quot;Bhutanese Ngultrum&quot;),</span>
+<span class="nc" id="L28">	BWP(&quot;BWP&quot;,&quot;Botswanan Pula&quot;),</span>
+<span class="nc" id="L29">	BYN(&quot;BYN&quot;,&quot;New Belarusian Ruble&quot;),</span>
+<span class="nc" id="L30">	BYR(&quot;BYR&quot;,&quot;Belarusian Ruble&quot;),</span>
+<span class="nc" id="L31">	BZD(&quot;BZD&quot;,&quot;Belize Dollar&quot;),</span>
+<span class="nc" id="L32">	CAD(&quot;CAD&quot;,&quot;Canadian Dollar&quot;),</span>
+<span class="nc" id="L33">	CDF(&quot;CDF&quot;,&quot;Congolese Franc&quot;),</span>
+<span class="nc" id="L34">	CHF(&quot;CHF&quot;,&quot;Swiss Franc&quot;),</span>
+<span class="nc" id="L35">	CLF(&quot;CLF&quot;,&quot;Chilean Unit of Account (UF)&quot;),</span>
+<span class="nc" id="L36">	CLP(&quot;CLP&quot;,&quot;Chilean Peso&quot;),</span>
+<span class="nc" id="L37">	CNY(&quot;CNY&quot;,&quot;Chinese Yuan&quot;),</span>
+<span class="nc" id="L38">	COP(&quot;COP&quot;,&quot;Colombian Peso&quot;),</span>
+<span class="nc" id="L39">	CRC(&quot;CRC&quot;,&quot;Costa Rican Col\u00f3n&quot;),</span>
+<span class="nc" id="L40">	CUC(&quot;CUC&quot;,&quot;Cuban Convertible Peso&quot;),</span>
+<span class="nc" id="L41">	CUP(&quot;CUP&quot;,&quot;Cuban Peso&quot;),</span>
+<span class="nc" id="L42">	CVE(&quot;CVE&quot;,&quot;Cape Verdean Escudo&quot;),</span>
+<span class="nc" id="L43">	CZK(&quot;CZK&quot;,&quot;Czech Republic Koruna&quot;),</span>
+<span class="nc" id="L44">	DJF(&quot;DJF&quot;,&quot;Djiboutian Franc&quot;),</span>
+<span class="nc" id="L45">	DKK(&quot;DKK&quot;,&quot;Danish Krone&quot;),</span>
+<span class="nc" id="L46">	DOP(&quot;DOP&quot;,&quot;Dominican Peso&quot;),</span>
+<span class="nc" id="L47">	DZD(&quot;DZD&quot;,&quot;Algerian Dinar&quot;),</span>
+<span class="nc" id="L48">	EGP(&quot;EGP&quot;,&quot;Egyptian Pound&quot;),</span>
+<span class="nc" id="L49">	ERN(&quot;ERN&quot;,&quot;Eritrean Nakfa&quot;),</span>
+<span class="nc" id="L50">	ETB(&quot;ETB&quot;,&quot;Ethiopian Birr&quot;),</span>
+<span class="nc" id="L51">	EUR(&quot;EUR&quot;,&quot;Euro&quot;),</span>
+<span class="nc" id="L52">	FJD(&quot;FJD&quot;,&quot;Fijian Dollar&quot;),</span>
+<span class="nc" id="L53">	FKP(&quot;FKP&quot;,&quot;Falkland Islands Pound&quot;),</span>
+<span class="nc" id="L54">	GBP(&quot;GBP&quot;,&quot;British Pound Sterling&quot;),</span>
+<span class="nc" id="L55">	GEL(&quot;GEL&quot;,&quot;Georgian Lari&quot;),</span>
+<span class="nc" id="L56">	GGP(&quot;GGP&quot;,&quot;Guernsey Pound&quot;),</span>
+<span class="nc" id="L57">	GHS(&quot;GHS&quot;,&quot;Ghanaian Cedi&quot;),</span>
+<span class="nc" id="L58">	GIP(&quot;GIP&quot;,&quot;Gibraltar Pound&quot;),</span>
+<span class="nc" id="L59">	GMD(&quot;GMD&quot;,&quot;Gambian Dalasi&quot;),</span>
+<span class="nc" id="L60">	GNF(&quot;GNF&quot;,&quot;Guinean Franc&quot;),</span>
+<span class="nc" id="L61">	GTQ(&quot;GTQ&quot;,&quot;Guatemalan Quetzal&quot;),</span>
+<span class="nc" id="L62">	GYD(&quot;GYD&quot;,&quot;Guyanaese Dollar&quot;),</span>
+<span class="nc" id="L63">	HKD(&quot;HKD&quot;,&quot;Hong Kong Dollar&quot;),</span>
+<span class="nc" id="L64">	HNL(&quot;HNL&quot;,&quot;Honduran Lempira&quot;),</span>
+<span class="nc" id="L65">	HRK(&quot;HRK&quot;,&quot;Croatian Kuna&quot;),</span>
+<span class="nc" id="L66">	HTG(&quot;HTG&quot;,&quot;Haitian Gourde&quot;),</span>
+<span class="nc" id="L67">	HUF(&quot;HUF&quot;,&quot;Hungarian Forint&quot;),</span>
+<span class="nc" id="L68">	IDR(&quot;IDR&quot;,&quot;Indonesian Rupiah&quot;),</span>
+<span class="nc" id="L69">	ILS(&quot;ILS&quot;,&quot;Israeli New Sheqel&quot;),</span>
+<span class="nc" id="L70">	IMP(&quot;IMP&quot;,&quot;Manx pound&quot;),</span>
+<span class="nc" id="L71">	INR(&quot;INR&quot;,&quot;Indian Rupee&quot;),</span>
+<span class="nc" id="L72">	IQD(&quot;IQD&quot;,&quot;Iraqi Dinar&quot;),</span>
+<span class="nc" id="L73">	IRR(&quot;IRR&quot;,&quot;Iranian Rial&quot;),</span>
+<span class="nc" id="L74">	ISK(&quot;ISK&quot;,&quot;Icelandic Kr\u00f3na&quot;),</span>
+<span class="nc" id="L75">	JEP(&quot;JEP&quot;,&quot;Jersey Pound&quot;),</span>
+<span class="nc" id="L76">	JMD(&quot;JMD&quot;,&quot;Jamaican Dollar&quot;),</span>
+<span class="nc" id="L77">	JOD(&quot;JOD&quot;,&quot;Jordanian Dinar&quot;),</span>
+<span class="nc" id="L78">	JPY(&quot;JPY&quot;,&quot;Japanese Yen&quot;),</span>
+<span class="nc" id="L79">	KES(&quot;KES&quot;,&quot;Kenyan Shilling&quot;),</span>
+<span class="nc" id="L80">	KGS(&quot;KGS&quot;,&quot;Kyrgystani Som&quot;),</span>
+<span class="nc" id="L81">	KHR(&quot;KHR&quot;,&quot;Cambodian Riel&quot;),</span>
+<span class="nc" id="L82">	KMF(&quot;KMF&quot;,&quot;Comorian Franc&quot;),</span>
+<span class="nc" id="L83">	KPW(&quot;KPW&quot;,&quot;North Korean Won&quot;),</span>
+<span class="nc" id="L84">	KRW(&quot;KRW&quot;,&quot;South Korean Won&quot;),</span>
+<span class="nc" id="L85">	KWD(&quot;KWD&quot;,&quot;Kuwaiti Dinar&quot;),</span>
+<span class="nc" id="L86">	KYD(&quot;KYD&quot;,&quot;Cayman Islands Dollar&quot;),</span>
+<span class="nc" id="L87">	KZT(&quot;KZT&quot;,&quot;Kazakhstani Tenge&quot;),</span>
+<span class="nc" id="L88">	LAK(&quot;LAK&quot;,&quot;Laotian Kip&quot;),</span>
+<span class="nc" id="L89">	LBP(&quot;LBP&quot;,&quot;Lebanese Pound&quot;),</span>
+<span class="nc" id="L90">	LKR(&quot;LKR&quot;,&quot;Sri Lankan Rupee&quot;),</span>
+<span class="nc" id="L91">	LRD(&quot;LRD&quot;,&quot;Liberian Dollar&quot;),</span>
+<span class="nc" id="L92">	LSL(&quot;LSL&quot;,&quot;Lesotho Loti&quot;),</span>
+<span class="nc" id="L93">	LTL(&quot;LTL&quot;,&quot;Lithuanian Litas&quot;),</span>
+<span class="nc" id="L94">	LVL(&quot;LVL&quot;,&quot;Latvian Lats&quot;),</span>
+<span class="nc" id="L95">	LYD(&quot;LYD&quot;,&quot;Libyan Dinar&quot;),</span>
+<span class="nc" id="L96">	MAD(&quot;MAD&quot;,&quot;Moroccan Dirham&quot;),</span>
+<span class="nc" id="L97">	MDL(&quot;MDL&quot;,&quot;Moldovan Leu&quot;),</span>
+<span class="nc" id="L98">	MGA(&quot;MGA&quot;,&quot;Malagasy Ariary&quot;),</span>
+<span class="nc" id="L99">	MKD(&quot;MKD&quot;,&quot;Macedonian Denar&quot;),</span>
+<span class="nc" id="L100">	MMK(&quot;MMK&quot;,&quot;Myanma Kyat&quot;),</span>
+<span class="nc" id="L101">	MNT(&quot;MNT&quot;,&quot;Mongolian Tugrik&quot;),</span>
+<span class="nc" id="L102">	MOP(&quot;MOP&quot;,&quot;Macanese Pataca&quot;),</span>
+<span class="nc" id="L103">	MRO(&quot;MRO&quot;,&quot;Mauritanian Ouguiya&quot;),</span>
+<span class="nc" id="L104">	MUR(&quot;MUR&quot;,&quot;Mauritian Rupee&quot;),</span>
+<span class="nc" id="L105">	MVR(&quot;MVR&quot;,&quot;Maldivian Rufiyaa&quot;),</span>
+<span class="nc" id="L106">	MWK(&quot;MWK&quot;,&quot;Malawian Kwacha&quot;),</span>
+<span class="nc" id="L107">	MXN(&quot;MXN&quot;,&quot;Mexican Peso&quot;),</span>
+<span class="nc" id="L108">	MYR(&quot;MYR&quot;,&quot;Malaysian Ringgit&quot;),</span>
+<span class="nc" id="L109">	MZN(&quot;MZN&quot;,&quot;Mozambican Metical&quot;),</span>
+<span class="nc" id="L110">	NAD(&quot;NAD&quot;,&quot;Namibian Dollar&quot;),</span>
+<span class="nc" id="L111">	NGN(&quot;NGN&quot;,&quot;Nigerian Naira&quot;),</span>
+<span class="nc" id="L112">	NIO(&quot;NIO&quot;,&quot;Nicaraguan C\u00f3rdoba&quot;),</span>
+<span class="nc" id="L113">	NOK(&quot;NOK&quot;,&quot;Norwegian Krone&quot;),</span>
+<span class="nc" id="L114">	NPR(&quot;NPR&quot;,&quot;Nepalese Rupee&quot;),</span>
+<span class="nc" id="L115">	NZD(&quot;NZD&quot;,&quot;New Zealand Dollar&quot;),</span>
+<span class="nc" id="L116">	OMR(&quot;OMR&quot;,&quot;Omani Rial&quot;),</span>
+<span class="nc" id="L117">	PAB(&quot;PAB&quot;,&quot;Panamanian Balboa&quot;),</span>
+<span class="nc" id="L118">	PEN(&quot;PEN&quot;,&quot;Peruvian Nuevo Sol&quot;),</span>
+<span class="nc" id="L119">	PGK(&quot;PGK&quot;,&quot;Papua New Guinean Kina&quot;),</span>
+<span class="nc" id="L120">	PHP(&quot;PHP&quot;,&quot;Philippine Peso&quot;),</span>
+<span class="nc" id="L121">	PKR(&quot;PKR&quot;,&quot;Pakistani Rupee&quot;),</span>
+<span class="nc" id="L122">	PLN(&quot;PLN&quot;,&quot;Polish Zloty&quot;),</span>
+<span class="nc" id="L123">	PYG(&quot;PYG&quot;,&quot;Paraguayan Guarani&quot;),</span>
+<span class="nc" id="L124">	QAR(&quot;QAR&quot;,&quot;Qatari Rial&quot;),</span>
+<span class="nc" id="L125">	RON(&quot;RON&quot;,&quot;Romanian Leu&quot;),</span>
+<span class="nc" id="L126">	RSD(&quot;RSD&quot;,&quot;Serbian Dinar&quot;),</span>
+<span class="nc" id="L127">	RUB(&quot;RUB&quot;,&quot;Russian Ruble&quot;),</span>
+<span class="nc" id="L128">	RWF(&quot;RWF&quot;,&quot;Rwandan Franc&quot;),</span>
+<span class="nc" id="L129">	SAR(&quot;SAR&quot;,&quot;Saudi Riyal&quot;),</span>
+<span class="nc" id="L130">	SBD(&quot;SBD&quot;,&quot;Solomon Islands Dollar&quot;),</span>
+<span class="nc" id="L131">	SCR(&quot;SCR&quot;,&quot;Seychellois Rupee&quot;),</span>
+<span class="nc" id="L132">	SDG(&quot;SDG&quot;,&quot;Sudanese Pound&quot;),</span>
+<span class="nc" id="L133">	SEK(&quot;SEK&quot;,&quot;Swedish Krona&quot;),</span>
+<span class="nc" id="L134">	SGD(&quot;SGD&quot;,&quot;Singapore Dollar&quot;),</span>
+<span class="nc" id="L135">	SHP(&quot;SHP&quot;,&quot;Saint Helena Pound&quot;),</span>
+<span class="nc" id="L136">	SLL(&quot;SLL&quot;,&quot;Sierra Leonean Leone&quot;),</span>
+<span class="nc" id="L137">	SOS(&quot;SOS&quot;,&quot;Somali Shilling&quot;),</span>
+<span class="nc" id="L138">	SRD(&quot;SRD&quot;,&quot;Surinamese Dollar&quot;),</span>
+<span class="nc" id="L139">	STD(&quot;STD&quot;,&quot;S\u00e3o Tom\u00e9 and Pr\u00edncipe Dobra&quot;),</span>
+<span class="nc" id="L140">	SVC(&quot;SVC&quot;,&quot;Salvadoran Col\u00f3n&quot;),</span>
+<span class="nc" id="L141">	SYP(&quot;SYP&quot;,&quot;Syrian Pound&quot;),</span>
+<span class="nc" id="L142">	SZL(&quot;SZL&quot;,&quot;Swazi Lilangeni&quot;),</span>
+<span class="nc" id="L143">	THB(&quot;THB&quot;,&quot;Thai Baht&quot;),</span>
+<span class="nc" id="L144">	TJS(&quot;TJS&quot;,&quot;Tajikistani Somoni&quot;),</span>
+<span class="nc" id="L145">	TMT(&quot;TMT&quot;,&quot;Turkmenistani Manat&quot;),</span>
+<span class="nc" id="L146">	TND(&quot;TND&quot;,&quot;Tunisian Dinar&quot;),</span>
+<span class="nc" id="L147">	TOP(&quot;TOP&quot;,&quot;Tongan Pa\u02bbanga&quot;),</span>
+<span class="nc" id="L148">	TRY(&quot;TRY&quot;,&quot;Turkish Lira&quot;),</span>
+<span class="nc" id="L149">	TTD(&quot;TTD&quot;,&quot;Trinidad and Tobago Dollar&quot;),</span>
+<span class="nc" id="L150">	TWD(&quot;TWD&quot;,&quot;New Taiwan Dollar&quot;),</span>
+<span class="nc" id="L151">	TZS(&quot;TZS&quot;,&quot;Tanzanian Shilling&quot;),</span>
+<span class="nc" id="L152">	UAH(&quot;UAH&quot;,&quot;Ukrainian Hryvnia&quot;),</span>
+<span class="nc" id="L153">	UGX(&quot;UGX&quot;,&quot;Ugandan Shilling&quot;),</span>
+<span class="nc" id="L154">	USD(&quot;USD&quot;,&quot;United States Dollar&quot;),</span>
+<span class="nc" id="L155">	UYU(&quot;UYU&quot;,&quot;Uruguayan Peso&quot;),</span>
+<span class="nc" id="L156">	UZS(&quot;UZS&quot;,&quot;Uzbekistan Som&quot;),</span>
+<span class="nc" id="L157">	VEF(&quot;VEF&quot;,&quot;Venezuelan Bol\u00edvar Fuerte&quot;),</span>
+<span class="nc" id="L158">	VND(&quot;VND&quot;,&quot;Vietnamese Dong&quot;),</span>
+<span class="nc" id="L159">	VUV(&quot;VUV&quot;,&quot;Vanuatu Vatu&quot;),</span>
+<span class="nc" id="L160">	WST(&quot;WST&quot;,&quot;Samoan Tala&quot;),</span>
+<span class="nc" id="L161">	XAF(&quot;XAF&quot;,&quot;CFA Franc BEAC&quot;),</span>
+<span class="nc" id="L162">	XAG(&quot;XAG&quot;,&quot;Silver (troy ounce)&quot;),</span>
+<span class="nc" id="L163">	XAU(&quot;XAU&quot;,&quot;Gold (troy ounce)&quot;),</span>
+<span class="nc" id="L164">	XCD(&quot;XCD&quot;,&quot;East Caribbean Dollar&quot;),</span>
+<span class="nc" id="L165">	XDR(&quot;XDR&quot;,&quot;Special Drawing Rights&quot;),</span>
+<span class="nc" id="L166">	XOF(&quot;XOF&quot;,&quot;CFA Franc BCEAO&quot;),</span>
+<span class="nc" id="L167">	XPF(&quot;XPF&quot;,&quot;CFP Franc&quot;),</span>
+<span class="nc" id="L168">	YER(&quot;YER&quot;,&quot;Yemeni Rial&quot;),</span>
+<span class="nc" id="L169">	ZAR(&quot;ZAR&quot;,&quot;South African Rand&quot;),</span>
+<span class="nc" id="L170">	ZMK(&quot;ZMK&quot;,&quot;Zambian Kwacha (pre-2013)&quot;),</span>
+<span class="nc" id="L171">	ZMW(&quot;ZMW&quot;,&quot;Zambian Kwacha&quot;),</span>
+<span class="nc" id="L172">	ZWL(&quot;ZWL&quot;,&quot;Zimbabwean Dollar&quot;);</span>
+	
+	private final String code;
+	private final String description;
+
+<span class="nc" id="L177">	Currency(String code, String description) {</span>
+<span class="nc" id="L178">		this.code = code;</span>
+<span class="nc" id="L179">        this.description = description;</span>
+<span class="nc" id="L180">	}</span>
+
+	public static Currency fromCode(String code) {
+<span class="nc bnc" id="L183" title="All 2 branches missed.">		for (Currency cur : Currency.values()) {</span>
+<span class="nc bnc" id="L184" title="All 2 branches missed.">			if (cur.name().equals(code)) {</span>
+<span class="nc" id="L185">				return cur;</span>
+			}
+		}
+<span class="nc" id="L188">		throw new IllegalArgumentException(code);</span>
+	}
+
+    public String getCode() {
+<span class="nc" id="L192">        return code;</span>
+    }
+
+    public String getDescription() {
+<span class="nc" id="L196">        return description;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

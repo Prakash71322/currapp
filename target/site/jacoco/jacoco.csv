@@ -1,0 +1,13 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+ra-currency-converter,com.rautomates.cc.util,Currency,1392,0,4,0,179,0,7,0,5,0
+ra-currency-converter,com.rautomates.cc.constants,Constants,3,0,0,0,1,0,1,0,1,0
+ra-currency-converter,com.rautomates.cc.cache,RatesCache,12,16,1,1,3,4,3,2,2,2
+ra-currency-converter,com.rautomates.cc.bp,ConverterBPImpl,115,3,4,0,26,1,4,1,2,1
+ra-currency-converter,com.rautomates.cc.config,WebConfiguration,0,10,0,0,0,3,0,2,0,2
+ra-currency-converter,com.rautomates.cc.config,BaseInterceptor,32,3,4,0,10,1,3,1,1,1
+ra-currency-converter,com.rautomates.cc.controller,MainController,45,3,0,0,10,1,4,1,4,1
+ra-currency-converter,com.rautomates.cc.model,ConverterModel,34,0,0,0,14,0,10,0,10,0
+ra-currency-converter,com.rautomates.cc.model,Error,24,0,0,0,10,0,7,0,7,0
+ra-currency-converter,com.rautomates.cc.model,ConversionRates,66,0,0,0,28,0,19,0,19,0
+ra-currency-converter,com.rautomates.cc.model,ResponseModel,17,0,0,0,7,0,5,0,5,0
+ra-currency-converter,com.rautomates.cc,Application,14,3,0,0,3,1,2,1,2,1
