@@ -25,6 +25,9 @@
 		<jacoco.version>0.8.13</jacoco.version>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.token>squ_a6cea4c88ca4b278dde3bea50650d46e1fbd99f3</sonar.token>
+		<sonar.projectKey>com:cc</sonar.projectKey>
+		<sonar.projectName>CurrencyConvertor</sonar.projectName>
 	</properties>
 
 	<dependencies>
